@@ -1,8 +1,6 @@
-@import "./components/basic";
+@import "./base/basic";
 @import "./utils/mixins";
-@import "./components/container";
-@import "./components/section";
-@import "./components/title";
+@import "./base/common";
 @import "./utils/placeholder";
 @import "./utils/hidden";
 @import "./components/header";
