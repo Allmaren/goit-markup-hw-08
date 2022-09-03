@@ -957,12 +957,23 @@ img {
   color: var(--white-color);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .social-title {
+    text-align: left;
+  }
+}
 
 .subscribe-text {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-text {
+    flex-wrap: nowrap;
+    gap: 12px;
+  }
 }
 
 .subscribe-email {
@@ -982,6 +993,11 @@ img {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-email {
+    width: 358px;
+  }
 }
 
 .subscribe-send {
