@@ -2,7 +2,10 @@
 	padding-top: 200px;
 	padding-bottom: 200px;
 	text-align: center;
-	max-width: 1600px;
+	width: 100%;
+	@include desktop {
+		max-width: 1600px;
+	}
 	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -11,12 +14,17 @@
 	margin-right: auto;
 	background-color: var(--fon-accent); /*если фон не прогрузился*/
 }
+
 .hero-title {
 	color: var(--white-color);
 	text-align: center;
-	@include text-design(900, 44px, 1.36, 0.06em);
+	@include text-design(900, 26px, 1.6, 0.06em);
+	@include desktop {
+		@include text-design(900, 44px, 1.36, 0.06em);
+		max-width: 696px;
+	}
+
 	text-transform: uppercase;
-	max-width: 696px;
 	margin: 0 auto;
 	margin-bottom: 30px;
 }

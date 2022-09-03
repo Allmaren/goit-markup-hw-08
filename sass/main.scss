@@ -1,8 +1,10 @@
-@import "./base/basic";
 @import "./utils/mixins";
-@import "./base/common";
 @import "./utils/placeholder";
 @import "./utils/hidden";
+
+@import "./components/basic";
+@import "./components/container";
+
 @import "./components/header";
 @import "./components/hero";
 @import "./components/original";

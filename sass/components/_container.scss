@@ -1,7 +1,18 @@
 .container {
-	width: 1200px;
+	width: 100%;
 	padding-left: 15px;
 	padding-right: 15px;
-	margin: 0px auto;
-	/* outline: 2px solid tomato; */
+	margin-left: auto;
+	margin-right: auto;
+	// margin: 0px auto;
+	// outline: 2px solid tomato;
+	@include mobile {
+		width: 480px;
+	}
+	@include tablet {
+		width: 768px;
+	}
+	@include desktop {
+		width: 1200px;
+	}
 }

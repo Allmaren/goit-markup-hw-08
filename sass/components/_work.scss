@@ -1,7 +1,12 @@
 .work {
-	padding-top: 0;
+	display: none;
+	@include desktop {
+		display: inherit;
+		padding-top: 0;
+	}
 	&__title {
-		@extend %text-margin;
+		display: flex;
+		align-items: center;
 	}
 }
 
