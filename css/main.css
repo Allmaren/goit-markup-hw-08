@@ -241,7 +241,7 @@ img {
   padding-bottom: 200px;
   text-align: center;
   width: 100%;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mob.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -249,9 +249,15 @@ img {
   margin-right: auto;
   background-color: var(--fon-accent); /*если фон не прогрузился*/
 }
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tab.jpg");
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero-section {
     max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-pc.jpg");
   }
 }
 
