@@ -812,6 +812,7 @@ img {
 
 .agreement-link {
   color: var(--accent-color);
+  margin-left: 5px;
   text-decoration: none;
 }
 
@@ -822,10 +823,18 @@ img {
   margin-left: auto;
   margin-right: auto;
   font-weight: inherit;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--pretitle-color);
+}
+@media screen and (min-width: 768px) {
+  .check-policy {
+    font-weight: inherit;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .check-policy span {
