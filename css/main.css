@@ -118,6 +118,12 @@ img {
   }
 }
 
+.list {
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
 /*лого з варіантами*/
 .logo {
   font-family: "Raleway", sans-serif;
@@ -136,23 +142,101 @@ img {
   color: var(--white-color);
 }
 
+.header-logo {
+  display: initial;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 /*Хедер*/
-.head-design {
+.icon-menu {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  position: absolute;
   display: flex;
   align-items: center;
+  justify-content: center;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 768px) {
+  .icon-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .head-design {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .head-design {
+    margin: 0px auto;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+  }
 }
 
 .header {
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
-.header .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-.header-navigation, .header-nav {
+
+.header-logo-nav {
   display: flex;
-  gap: 50px;
+  align-items: center;
 }
+
+.header-navigation {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-navigation {
+    display: flex;
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-navigation {
+    display: flex;
+    gap: 50px;
+  }
+}
+
+.header-nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-nav {
+    display: flex;
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    display: flex;
+    gap: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-nav-list {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+  }
+}
+
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -163,6 +247,7 @@ img {
   color: var(--primary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .header-address {
   font-weight: 500;
   font-size: 14px;
@@ -173,9 +258,6 @@ img {
   color: var(--pretitle-color);
   fill: var(--accent-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-nav {
-  margin-left: auto;
 }
 
 .header-link {
@@ -247,17 +329,31 @@ img {
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--fon-accent); /*если фон не прогрузился*/
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero2-mob.jpg");
+  }
 }
 @media screen and (min-width: 768px) {
   .hero-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tab.jpg");
   }
 }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero2-tab.jpg");
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero-section {
     max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-pc.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero2-pc.jpg");
   }
 }
 
