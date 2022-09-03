@@ -1,0 +1,108 @@
+.list {
+	list-style: none;
+	margin-top: 0px;
+	margin-bottom: 0;
+}
+/*лого з варіантами*/
+.logo {
+	font-family: "Raleway", sans-serif;
+	@include text-design(700, 26px, 1.19, 0.03em);
+	color: var(--accent-color);
+	text-decoration: none;
+	margin-right: 93px;
+	&__black {
+		color: #000000;
+	}
+	&__white {
+		color: var(--white-color);
+	}
+}
+
+/*Хедер*/
+.head-design {
+	@extend %align-list;
+}
+
+.header {
+	border-bottom: 1px solid #ececec;
+	.logo {
+		padding-top: 24px;
+		padding-bottom: 25px;
+	}
+	&-navigation,
+	&-nav {
+		display: flex;
+		gap: 50px;
+	}
+
+	&-link {
+		@include text-design(500, 14px, 1.14, 0.02em);
+		text-decoration: none;
+		display: block;
+		color: var(--primary-text-color);
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	&-address {
+		@include text-design(500, 14px, 1.14, 0.02em);
+		text-decoration: none;
+		display: block;
+		color: var(--pretitle-color);
+		fill: var(--accent-color);
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	&-nav {
+		margin-left: auto;
+	}
+}
+
+.header-link {
+	@include text-design(500, 14px, 1.14, 0.02em);
+	text-decoration: none;
+	display: block;
+	color: var(--primary-text-color);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+}
+
+.header-link.current {
+	position: relative;
+	&::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 4px;
+		border-radius: 2px;
+		background-color: var(--accent-color);
+		position: absolute;
+		top: 45px;
+	}
+}
+.header-address.mail,
+.header-address.tel {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	fill: var(--pretitle-color);
+}
+.header-address.mail:hover,
+.header-address.mail:focus {
+	color: var(--accent-color);
+}
+.header-address.tel:hover,
+.header-address.tel:focus {
+	color: var(--accent-color);
+}
+.mail-icon,
+.tel-icon {
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-address:hover .mail-icon,
+.header-address:focus .mail-icon,
+.header-address:hover .tel-icon,
+.header-address:focus .tel-icon {
+	fill: currentColor;
+}

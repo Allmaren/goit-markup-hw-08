@@ -1,0 +1,23 @@
+/*@extend %align-list;*/
+%align-list {
+	display: flex;
+	align-items: center;
+}
+/*@extend %text-margin;*/
+%text-margin {
+	margin-bottom: 50px;
+	text-align: center;
+}
+/*@include text-design(700, 26px, 1.19, 0.03em);*/
+@mixin text-design($fw, $fs, $lh, $ls) {
+	font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh;
+	letter-spacing: $ls;
+}
+/*@extend %align-list-social;*/
+%align-list-social {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

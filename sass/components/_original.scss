@@ -1,0 +1,35 @@
+.original {
+	background-color: var(--white-color);
+	padding-bottom: 0;
+}
+.original-list {
+	display: flex;
+	flex-wrap: wrap;
+	&__fon {
+		height: 120px;
+		background-color: #f5f4fa;
+		border-radius: 4px;
+		margin-bottom: 30px;
+		@extend %align-list-social;
+	}
+	&__icon {
+		width: 70px;
+		height: 70px;
+	}
+	&__title {
+		@include text-design(700, 14px, 1.14, 0.03em);
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+	&__pretitle {
+		@include text-design(inherit, 14px, 1.71, 0.03em);
+		color: var(--pretitle-color);
+	}
+}
+
+.original-list__item {
+	width: calc((100% - 90px) / 4);
+	& + & {
+		margin-left: 30px;
+	}
+}
