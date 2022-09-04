@@ -9,7 +9,6 @@
 	@include text-design(700, 26px, 1.19, 0.03em);
 	color: var(--accent-color);
 	text-decoration: none;
-	margin-right: 93px;
 	&__black {
 		color: #000000;
 	}
@@ -19,24 +18,20 @@
 }
 .header-logo {
 	display: initial;
-	padding-top: 24px;
-	padding-bottom: 25px;
 }
 /*Хедер*/
 .head-design {
-	// display: none;
+	padding-top: 24px;
+	padding-bottom: 25px;
+	justify-content: space-between;
+	display: flex;
 	@include tablet {
-		display: flex;
+		margin-top: auto;
 		align-items: center;
-		margin: 0;
-		justify-content: center;
-		// justify-content: space-between;
 	}
 	@include desktop {
-		margin: 0px auto;
 		align-items: center;
-		margin: 0;
-		justify-content: center;
+		justify-content: space-evenly;
 	}
 }
 
@@ -149,102 +144,4 @@
 .header-address:hover .tel-icon,
 .header-address:focus .tel-icon {
 	fill: currentColor;
-}
-
-/*Мобільне меню*/
-.icon-menu {
-	width: 100%;
-	width: 40px;
-	height: 40px;
-	display: inline-block;
-	box-sizing: border-box;
-	// background-color: transparent;
-	outline: none;
-	border: none;
-	position: absolute;
-	// translate: transform (100%);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	right: 15px;
-	top: 50%;
-	transform: translateY(-50%);
-
-	@include tablet {
-		display: none;
-	}
-}
-
-.mobile-menu {
-	margin: 0%;
-	position: relative;
-	position: fixed;
-	background-color: aqua;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	z-index: 1;
-}
-
-.menu-container {
-	width: 480px;
-	margin-left: 40px;
-	margin-right: auto;
-	margin-top: 48px;
-}
-
-.mobile-menu-close {
-	position: absolute;
-	display: block;
-	top: 20px;
-	right: 20px;
-}
-
-.menu-nav-link {
-	display: block;
-	text-decoration: none;
-	font-weight: 500;
-	font-size: 20px;
-	line-height: 47px;
-	letter-spacing: 0.02em;
-	color: #212121;
-	@include mobile {
-		font-size: 40px;
-	}
-}
-.menu-nav-item:not(:last-child) {
-	// padding-bottom: 18px;
-	// @include mobile {
-	// 	padding-bottom: 32px;
-	// }
-}
-
-.mobile-address-mail {
-	text-decoration: none;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 40px;
-	/* identical to box height */
-	color: #2196f3;
-	letter-spacing: 0.02em;
-	@include mobile {
-		font-size: 34px;
-	}
-}
-.mobile-address-tel {
-	text-decoration: none;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 28px;
-	letter-spacing: 0.02em;
-
-	color: #757575;
-	@include mobile {
-		font-size: 24px;
-	}
-}
-.mobile-soc-item {
-	text-decoration: none;
-	border-right: 1px solid rgba(32, 19, 205, 0.2);
 }
