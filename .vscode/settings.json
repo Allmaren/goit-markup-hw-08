@@ -15,5 +15,6 @@
 	"liveSassCompile.settings.generateMap": true,
 	"liveServer.settings.port": 1235,
 	"liveSassCompile.settings.autoprefix": null,
-	"cSpell.language": "en,uk"
+	"cSpell.language": "en,uk",
+	"cSpell.words": ["Десктопні", "Значимість", "Разробка"]
 }

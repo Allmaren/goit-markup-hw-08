@@ -32,7 +32,7 @@
 }
 
 .original-list__item {
-	width: 100%;
+	max-width: 450px;
 	@include tablet {
 		width: calc((100% - 30px) / 2);
 	}
