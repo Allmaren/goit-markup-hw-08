@@ -187,9 +187,11 @@ img {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 @media screen and (min-width: 480px) {
   .soc-mob-menu {
+    font-weight: inherit;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
@@ -213,14 +215,16 @@ img {
   text-decoration: none;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: #212121;
 }
 @media screen and (min-width: 480px) {
   .menu-nav-link {
+    font-weight: 500;
     font-size: 40px;
-    line-height: 47px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -239,7 +243,8 @@ img {
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
   color: #2196f3;
   letter-spacing: 0.02em;
 }
