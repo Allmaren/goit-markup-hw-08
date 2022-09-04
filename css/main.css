@@ -23,6 +23,7 @@
   --primary-text-color: #212121;
   --pretitle-color: #757575;
   --accent-color: #2196f3;
+  --back-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 html {
@@ -473,7 +474,7 @@ img {
   padding-bottom: 200px;
   text-align: center;
   width: 100%;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mob.jpg");
+  background-image: var(--back-gradient), url("../images/hero-mob.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -482,28 +483,28 @@ img {
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-section {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero2-mob.jpg");
+    background-image: var(--back-gradient), url("../images/hero2-mob.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .hero-section {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tab.jpg");
+    background-image: var(--back-gradient), url("../images/hero-tab.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero2-tab.jpg");
+    background-image: var(--back-gradient), url("../images/hero2-tab.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-section {
     max-width: 1600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-pc.jpg");
+    background-image: var(--back-gradient), url("../images/hero-pc.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero2-pc.jpg");
+    background-image: var(--back-gradient), url("../images/hero2-pc.jpg");
   }
 }
 
