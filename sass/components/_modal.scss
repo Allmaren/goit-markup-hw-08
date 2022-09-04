@@ -52,7 +52,10 @@
 		margin-top: 10px;
 	}
 	&-title {
-		@include text-design(700, 20px, 1.15, 0.03em);
+		@include text-design(700, 18px, 1.15, 0.03em);
+		@include tablet {
+			@include text-design(700, 20px, 1.15, 0.03em);
+		}
 		text-align: center;
 		margin-bottom: 12px;
 	}
@@ -123,9 +126,13 @@
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
-	@include text-design(inherit, 12px, 1.71, 0.03em);
+	flex-wrap: wrap;
 
-	@include tablet {
+	@include text-design(inherit, 9px, 1.5, 0.03em);
+	@include mobile {
+		@include text-design(inherit, 12px, 1.71, 0.03em);
+	}
+	@include desktop {
 		@include text-design(inherit, 14px, 1.71, 0.03em);
 	}
 	color: var(--pretitle-color);

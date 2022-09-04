@@ -95,10 +95,6 @@
 	}
 }
 
-.active {
-	color: #2196f3;
-}
-
 .menu-nav-item:not(:last-child),
 .mobile-nav-item:not(:last-child) {
 	padding-bottom: 18px;
@@ -141,4 +137,16 @@
 	text-decoration: none;
 	border-right: 1px solid rgba(32, 19, 205, 0.2);
 	padding-right: 10px;
+}
+.active {
+	color: #2196f3;
+}
+
+.mobile-menu-close:hover,
+.mobile-menu-close:focus {
+	fill: var(--accent-color);
+}
+
+.close-icon-menu:focus-within .active {
+	color: red;
 }

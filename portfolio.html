@@ -23,52 +23,58 @@
 
 	<body>
 		<header class="header">
-			<div class="container head-design">
-				<a class="logo" href="./index.html">Web<span class="logo__black">Studio</span> </a>
-				<nav>
+			<div class="head-design container">
+				<a class="logo header-logo" href="./index.html">Web<span class="logo__black">Studio</span> </a>
+
+				<nav class="header-navigation">
 					<ul class="header-navigation list">
 						<li class="nav-item"><a href="./index.html" class="header-link">Студія</a></li>
 						<li class="nav-item"><a href="./portfolio.html" class="header-link current">Портфоліо</a></li>
 						<li class="nav-item"><a href="" class="header-link">Контакти</a></li>
 					</ul>
 				</nav>
-				<ul class="header-nav list">
-					<li class="nav-item">
-						<a href="mailto:info@devstudio.com" class="header-address mail">
-							<svg class="mail-icon" width="16" height="12">
-								<use href="./images/icons.svg#icon-mail"></use>
-							</svg>
-							info@devstudio.com</a
-						>
-					</li>
-					<li class="nav-item">
-						<a href="tel:+380961111111" class="header-address tel">
-							<svg class="mail-icon" width="12" height="16">
-								<use href="./images/icons.svg#icon-smartphone"></use>
-							</svg>
-							+38 096 111 11 11</a
-						>
-					</li>
-				</ul>
+
+				<div class="header-nav">
+					<ul class="header-nav-list list">
+						<li class="nav-item">
+							<a href="mailto:info@devstudio.com" class="header-address mail">
+								<svg class="mail-icon" width="16" height="12">
+									<use href="./images/icons.svg#icon-mail"></use>
+								</svg>
+								info@devstudio.com</a
+							>
+						</li>
+						<li class="nav-item">
+							<a href="tel:+380961111111" class="header-address tel">
+								<svg class="mail-icon" width="12" height="16">
+									<use href="./images/icons.svg#icon-smartphone"></use>
+								</svg>
+								+38 096 111 11 11</a
+							>
+						</li>
+					</ul>
+				</div>
+				<button type="button" class="menu-mobile-open" data-menu-open>
+					<svg class="menu-mobile-icon" width="40" height="40">
+						<use href="./images/icons.svg#icon-menu"></use>
+					</svg>
+				</button>
 			</div>
-			<button type="button">
-				<svg class="icon-menu">
-					<use href="./images/icons.svg#icon-menu"></use>
-				</svg>
-			</button>
 
-			<div class="mobile-menu">
+			<!-- </div>
+		</div> -->
+
+			<div class="mobile-menu is-hidden" data-menu>
+				<button type="button" class="mobile-menu-close" data-menu-close>
+					<svg class="close-icon-menu" data-menu>
+						<use href="./images/icons.svg#icon-close"></use>
+					</svg>
+				</button>
 				<div class="menu-container">
-					<button type="button" class="mobile-menu-close">
-						<svg class="close-icon">
-							<use href="./images/icons.svg#icon-close"></use>
-						</svg>
-					</button>
-
 					<nav class="menu-navigation">
 						<ul class="menu-navigation list">
-							<li class="menu-nav-item"><a href="./index.html" class="menu-nav-link active">Студія</a></li>
-							<li class="menu-nav-item"><a href="./portfolio.html" class="menu-nav-link">Портфоліо</a></li>
+							<li class="menu-nav-item"><a href="./index.html" class="menu-nav-link">Студія</a></li>
+							<li class="menu-nav-item"><a href="./portfolio.html" class="menu-nav-link active">Портфоліо</a></li>
 							<li class="menu-nav-item"><a href="" class="menu-nav-link">Контакти</a></li>
 						</ul>
 					</nav>
@@ -126,7 +132,6 @@
 				</div>
 			</div>
 		</header>
-
 		<main>
 			<section class="portfolio">
 				<div class="container">
