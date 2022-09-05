@@ -16,10 +16,10 @@
 }
 
 .clients-list__item {
-	width: calc((100% - 60px) / 2);
+	width: calc((100% - 30px) / 2);
 	height: 92px;
 	@include tablet {
-		width: calc((100% - 90px) / 3);
+		width: calc((100% - 60px) / 3);
 		@include desktop {
 			width: 170px;
 		}

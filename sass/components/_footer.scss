@@ -40,6 +40,9 @@
 		flex-direction: row;
 		justify-content: space-around;
 	}
+	@include desktop {
+		justify-content: space-between;
+	}
 }
 
 .footer-soc-icon {
@@ -134,4 +137,9 @@
 	fill: var(--white-color);
 	position: absolute;
 	right: 28px;
+}
+.footer-address {
+	@include desktop {
+		text-align: left;
+	}
 }
